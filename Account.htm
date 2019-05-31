@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>	
+	body {
+		background-image: url("3d9.jpg");
+		border-image-repeat: none;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	    position: relative;
+		height: 700px;
+		font-family: impact; 
+	}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*table#t01 th {
+			background-color: blue;
+			color:white;
+			padding: 5px;
+			}*/
+table, th ,td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+/*table#t01 tr {
+	background-color: lightgray;
+	color: black;
+	padding: 10px;*/
+}
+table#table th {
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+table#table {
+	color: white;
+	width: 250%;
+}
+a:link, a:visted {
+	background-color: black;
+	color: white;
+	border: 2px solid green;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active {
+	background-color: blue;
+	color: white;
+}
+.header{padding: 30px; text-align: center; color: white; font-size: 50px;}
+.container{overflow: hidden;}
+.tab{float: left;}
+.tab-2{margin-left: 50px}
+.tab-2 input{display: block;margin-bottom: 10px}
+tr{transition: all .25s ease-in-out}
+tr:hover{background-color: black; cursor: pointer;}
+
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<header>BUSINESS MANAGEMENT</header>
+	</div>
+ 	<ul>
+ 	    <li class="dropdown">
+   		<a href="#" class="dropbtn">Accounting</a>
+    	<div class="dropdown-content">
+    		<a href="journal.htm" target="_parent">Journal</a>
+      		<a href="ledger.htm" target="_parent">Ledger</a>
+    	    <a href="Balance.htm" target="_parent">Trial Balance</a>
+    	    <a href="income.htm" target="_parent">Income Statement</a>
+    	</div>
+    	<li><a href="bsheet.htm">Balance Sheet</a></li>
+ 	   	<li><a href="finacial.htm">Finacial Statement</a></li>
+ 	   	<li><a href="reconciliation.htm">Reconciliation</a></li>
+ 	   	<li style="float: right; background-color: green;"><a href="hr.htm"><i class="glyphicon glyphicon-user"></i>H R</a></li>
+ 	 </li>
+    </ul><br>
+    <button type="button" onclick="document.getElementById('date').innerHTML = Date()" style="float: right;">Todays Date & Time</button>
+    <h1 id="date" style="float: right;"></h1>
+    <h2 style="font-size: 40px; color: white;"><b>Chart of Account</b></h2>
+
+	<!--<table id="t01" style="width: 100%;">
+		<tr>
+			<th>Number</th>
+			<th>Account Description</th>
+			<th>Account Type</th>
+			<th>Statement</th>
+		</tr>
+		<tr>
+			<td>1000</td>
+			<td>Cash</td>
+			<td>Assets</td>
+			<td>Balance Sheet</td>
+		</tr>
+		<tr>
+			<td>0001</td>
+			<td>Accounts Receivable</td>
+			<td>Assets</td>
+			<td>Balance Sheet</td>
+		</tr>
+		<tr>
+			<td>2056</td>
+			<td>Insurance</td>
+			<td>Asset</td>
+			<td>Balance Sheet</td>
+		</tr>
+		<tr>
+			<td>9654</td>
+			<td>Account Payable</td>
+			<td>Liabilities</td>
+			<td>Balance Sheet</td>
+		</tr>
+		<tr>
+			<td>3696</td>
+			<td>Equity</td>
+			<td>Equity</td>
+			<td>Balance Sheet</td>
+		</tr>
+		<tr>
+			<td>0982</td>
+			<td>Fees Earned</td>
+			<td>Revenues</td>
+			<td>Income Statement</td>
+		</tr>
+		<tr>
+			<td>0870</td>
+			<td>Wages</td>
+			<td>Expenses</td>
+			<td>Income Statement</td>
+		</tr>
+	</table><br>-->
+
+	<div class="container">
+		<div class="tab tab-1">
+			<table id="table" border="1">
+				<tr style="background-color: black;">
+					<th>Number</th>
+					<th>Account Description</th>
+					<th>Account Type</th>
+					<th>Statement</th>
+				</tr>
+				<tr>
+					<td>1000</td>
+					<td>Cash</td>
+					<td>Assets</td>
+					<td>Balance Sheet</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Accounts Receivable</td>
+					<td>Asset</td>
+					<td>Balance Sheet</td>
+				</tr>
+				<tr>
+					<td>2056</td>
+					<td>Insurance</td>
+					<td>Asset</td>
+					<td>Balance Sheet</td>
+				</tr>
+				<tr>
+					<td>9655</td>
+					<td>Account Payable</td>
+					<td>Liabilities</td>
+					<td>Balance Sheet</td>
+				</tr>
+				<tr>
+					<td>3455</td>
+					<td>Equity</td>
+					<td>Equity</td>
+					<td>Balance Sheet</td>
+				</tr>
+				<tr>
+					<td>9987</td>
+					<td>Fees Earned</td>
+					<td>Revenues</td>
+					<td>Income Statement</td>
+				</tr>
+				<tr>
+					<td>8654</td>
+					<td>Wages</td>
+					<td>Expenses</td>
+					<td>Income Statement</td>
+				</tr>
+			</table>
+		</div>
+		<div class="tab tab-2" style="float: right; color: white;">
+			Number :<br><input type="number" name="num" id="num"><br>
+			Account Description :<br><input type="text" name="accountd" id="accountd"><br>
+			Account Type :<br><input type="text" name="accountt" id="accountt"><br>
+			Statement :<br><input type="text" name="state" id="state"><br>
+
+			<button onclick="addTableRow();">Add</button>
+			<button onclick="editTableSelectedRow();">Edit</button>
+			<button onclick="removeSelectedRow();">Remove</button>
+		</div>
+	</div>
+
+	<script>
+
+		var rIndex,
+		table = document.getElementById("table");
+
+		//check the empty input
+		function checkEmptyInput()
+		{
+			var isEmpty = false,
+			num = document.getElementById("num").value,
+			accountd = document.getElementById("accountd").value,
+			accountt = document.getElementById("accountt").value,
+			state = document.getElementById("state").value;
+
+			if(num === "")
+			{
+				alert("Number can not be Empty");
+				isEmpty = true;	
+			}
+			else if(accountd === "")
+			{
+				alert("Accout Description can not be Empty");
+				isEmpty = true;	
+			}
+			else if(accountt === "")
+			{
+				alert("Accout Type can not be Empty");
+				isEmpty = true;	
+			}
+			else if(state === "")
+			{
+				alert("Statement can not be Empty");
+				isEmpty = true;	
+			}
+			return isEmpty;
+		}
+
+
+		//add row
+		function addTableRow()
+		{
+			//get the table by id
+			//create a new row and cells
+			//get value from input text
+			//set the value into row cells
+			if(!checkEmptyInput())
+			{
+			var newRow = table.insertRow(table.length),
+				cell1 = newRow.insertCell(0),
+				cell2 = newRow.insertCell(1),
+				cell3 = newRow.insertCell(2),
+				cell4 = newRow.insertCell(3),
+				num = document.getElementById("num").value,
+				accountd = document.getElementById("accountd").value,
+				accountt = document.getElementById("accountt").value,
+				state = document.getElementById("state").value;
+
+			cell1.innerHTML = num;
+			cell2.innerHTML = accountd;
+			cell3.innerHTML = accountt;
+			cell4.innerHTML = state;
+
+			//call the function to set event to the new row
+			selectedRowToInput();
+		}
+		}
+
+		//display selected row data into input text
+		function selectedRowToInput()
+		{
+			//var rIndex,table = document.getElementById("table");
+			for(var i = 1; i < table.rows.length; i++)
+			{
+				table.rows[i].onclick = function()
+				{
+					//get the selected row index
+					rIndex = this.rIndex;
+					document.getElementById("num").value = this.cells[0].innerHTML;
+					document.getElementById("accountd").value = this.cells[1].innerHTML;
+					document.getElementById("accountt").value = this.cells[2].innerHTML;
+					document.getElementById("state").value = this.cells[3].innerHTML;
+				};
+			}
+		}
+		selectedRowToInput();
+
+		function editTableSelectedRow()
+		{
+			var num = document.getElementById("num").value,
+				accountd = document.getElementById("accountd").value,
+				accountt = document.getElementById("accountt").value,
+				state = document.getElementById("state").value;
+				if (!checkEmptyInput())
+				{
+				table.rows[rIndex].cells[0].innerHTML = num;
+				table.rows[rIndex].cells[1].innerHTML = accountd;
+				table.rows[rIndex].cells[2].innerHTML = accountt;
+				table.rows[rIndex].cells[3].innerHTML = state;
+			   	}
+
+		}
+		function removeSelectedRow()
+		{
+			table.deleteRow(rIndex);
+			//clear input text
+			document.getElementById("num").value = "";
+			document.getElementById("accountd").value = "";
+			document.getElementById("accountt").value = "";
+			document.getElementById("state").value = "";
+
+		}
+	</script>
+	<!--<a href="" target="_blank" style="background-color: black; color: white; border: 2px solid black; padding: 10px 40px; text-align: center; text-decoration: none; display: inline-block;">EDIT</a>
+	<a href="" target="_blank" style="background-color: black; color: white; border: 2px solid black; padding: 10px 25px; text-align: center; text-decoration: none; display: inline-block;">RECORDS</a>-->
+	<!--<form>
+		<input type="submit" name="EDIT">
+		<input type="submit" name="RECORD">
+	</form>-->
+</body>
+</html>

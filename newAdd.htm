@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			background-color: lightgray;
+		}
+		body, h1 {
+			font-size:20px;
+			font-weight: bold;
+		}
+		#section {
+			border: 2px solid black;
+			height: 900px;
+		}
+		#table1 {
+			border: 2px solid white;
+			height: 250px;
+			width: 80%;
+			margin-left: 60px;
+		}
+		#table2 {
+			border: 2px solid white;
+			height: 400px;
+			width: 80%;
+			margin-left: 60px;
+			margin-bottom: 20px;
+		}
+		.button, .button2, .button3 {
+			  display: inline-block;
+			  padding: 15px 25px;
+			  font-size: 24px;
+			  cursor: pointer;
+			  text-align: center;
+			  text-decoration: none;
+			  outline: none;
+			  color: #fff;
+			  background-color: #4CAF50;
+			  /*border: none;*/
+			  border-radius: 15px;
+			  box-shadow: 0 9px #999;
+			  border-spacing: 100px;
+			  margin-left: 200px;
+        }
+        .button:hover {background-color: #3e8e41}
+
+		.button:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+      
+        .button2:hover {background-color: #3e8e41}
+
+		.button2:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+		
+        .button3:hover {background-color: #3e8e41}
+
+		.button3:active {
+		  background-color: #3e8e41;
+		  box-shadow: 0 5px #666;
+		  transform: translateY(4px);
+		}
+        
+	</style>
+</head>
+<body>
+	<div id="section">
+		<h1>NEW EMPLOYEE FORM</h1>
+		<div>
+			<table id="table1">
+				<tr>
+					<td>First Name</td>
+					<td><form><input type="text" name=""></form></td>
+					<td>Date Of Birth</td>
+					<td><form><input type="date" name=""></form></td>
+				</tr>
+				<tr>
+					<td>Mid Name</td>
+					<td><form><input type="text" name=""></form></td>
+					<td>ID Number/Passport</td>
+					<td><form><input type="number" name=""></form></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><form><input type="text" name=""></form></td>
+					<td>Sex</td>
+					<td><form>
+						<select>
+							<option>MALE</option>
+							<option>FEMALE</option>
+						</select>
+					</form></td>
+				</tr>
+				<tr>
+					<td>Nationality</td>
+					<td><form><input type="text" name=""></form></td>
+					<td>Marital Status</td>
+					<td><form>
+						<select>
+							<option>ENGAGED</option>
+							<option>MARRIED</option>
+							<option>SINGLE</option>
+						</select>
+					</form></td>
+				</tr>
+				<tr>
+					<td>Education Level</td>
+					<td><form>
+						<select>
+							<option>Doctorate</option>
+							<option>Masters</option>
+							<option>Degree</option>
+							<option>Diploma</option>
+							<option>Certificate</option>
+						</select>
+					</form></td>
+					<td>Job Type</td>
+					<td><form>
+						<input type="text" name="">
+						<!--<select>
+							<option>Manager</option>
+							<option>Accountant</option>
+							<option>Secretary</option>
+							<option>Marketer</option>
+							<option>Cashier</option>
+							<option>Security</option>
+						</select>-->
+					</form></td>
+				</tr>
+			</table>
+		</div>
+		<p>Additional Info:</p>
+		<div>
+		<table id="table2">
+			<tr>
+				<td>KRA Pin</td>
+				<td><form><input type="text" name=""></form></td>
+				<td colspan="2" style="text-align: center;">The Next Of Kin</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Street Name</td>
+				<td><form><input type="number" name=""></form></td>
+				<td>First Name</td>
+				<td><form><input type="text" name=""></form></td>
+		 	</tr>
+		 	<tr>
+				<td>City/Town</td>
+				<td><form><input type="text" name=""></form></td>
+				<td>Mid Name</td>
+				<td><form><input type="text" name=""></form></td>
+		 	</tr>
+		 	<tr>
+				<td>Huduma Number</td>
+				<td><form><input type="text" name=""></form></td>
+				<td>Last Name</td>
+				<td><form><input type="text" name=""></form></td>
+		 	</tr>
+		 	<tr>
+				<td>Phone Number(1)</td>
+				<td><form><input type="number" name=""></form></td>
+				<td>Phone Number(1)</td>
+				<td><form><input type="number" name=""></form></td>
+		 	</tr>
+		 	<tr>
+				<td>Phone Number(2)</td>
+				<td><form><input type="number" name=""></form></td>
+				<td>Phone Number(2)</td>
+				<td><form><input type="number" name=""></form></td>
+		 	</tr>
+		 	<tr>
+				<td>E-mail</td>
+				<td><form><input type="mail" name=""></form></td>
+				<td>E-mail</td>
+				<td><form><input type="mail" name=""></form></td>
+		 	</tr>
+		</table>
+		</div>
+		<button class="button" type="button" onclick="#">SAVE</button>
+		<button class="button2" type="button" onclick="#">CLEAR</button>
+		<button class="button3" type="button" onclick="#">EXIT</button>
+	</div>
+</body>
+</html>

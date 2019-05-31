@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<style>
+			body {
+			  font-size: 15px;
+			  background-image: url("3d9.jpg");
+			  background-repeat: no-repeat;
+			  background-position: center;
+			  background-size: cover;
+			  position: relative;
+			  height: 700px;
+			}
+			div h2 {
+				color: white;
+				font-size: 40px;
+			}
+			.active {
+			  background-color: #4CAF50;
+			}
+			ul {
+			 	list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				/*position: -webkit-sticky;
+				position: sticky;
+				top: 0;*/
+               }
+
+			li {
+			  float: left;
+			}
+
+			li a, .dropbtn {
+			  display: inline-block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover, .dropdown:hover .dropbtn {
+			  background-color: red;
+			}
+
+			li.dropdown {
+			  display: inline-block;
+			}
+
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+
+			.dropdown-content a {
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			  text-align: left;
+			}
+
+			.dropdown-content a:hover {background-color: #f1f1f;}
+
+			.dropdown:hover .dropdown-content {
+			  display: block;
+			}
+		</style>
+</head>
+<body>	
+	<div class="header">
+  		<h2>HUMAN RESOURCE</h2>
+	</div>
+
+<ul>
+  <li class="dropdown">
+  	<a class="active" href="#home">Employee</a>
+  	<div class="dropdown-content" >
+  		<a href="newAdd.htm">Add New Employee</a>
+      	<a href="#">Edit Employee Details</a>
+      	<a href="#">Edit Employee Job Details</a>
+      	<a href="#">Edit Employee Salary Details</a>
+  	</div>
+  </li>
+  <li class="dropdown">
+  	<a href="#">Leaves</a>
+  	<div class="dropdown-content" >
+  		<a href="#">Employee Leaves</a>
+      	<a href="#">Leave Application</a>
+     </div>
+  </li>
+  <li class="dropdown">
+  	<a href="#contact">Payroll</a>
+  	<div class="dropdown-content" >
+  		<a href="#">Salary Structure</a>
+      	<a href="#">Attendance Details</a>
+      	<a href="#">Leave Details</a>
+  	</div>
+  </li>
+  <li class="dropdown">
+  	<a href="#contact">Attendance</a>
+  	<div class="dropdown-content" >
+  		<a href="#">Monthly Attendance Report</a>
+      	<a href="#">Daily Attendance Report</a>
+  	</div>
+  </li>
+  <li class="dropdown">
+  	<a href="#contact">Recruitment</a>
+  	<div class="dropdown-content" >
+  		<a href="#">Register</a>
+  		<a href="#">Register Recruitment Details</a>
+  	</div>
+  </li>
+  <li class="dropdown"> 
+  	<a href="#contact">Loans</a>
+  	<div class="dropdown-content" >
+  		<a href="#">Employee Loans</a>
+      	<a href="#">Loan Application</a>
+  	</div>
+  </li>
+  <li class="dropdown">
+  	<a href="#contact">Reports</a>
+  	<div class="dropdown-content" >
+  		<a href="#">HR Report</a>
+      	<a href="#">Recruitment Report</a>
+      	<a href="#">Employee Report</a>
+      	<a href="#">Payrall Report</a>
+  	</div>
+  </li>
+  <li>
+  	<a href="#contact">Announcement</a>
+  </li>
+  <li style="float: right;"><a href="#contact"><i class="glyphicon glyphicon-user"></i>LogOut</a></li>
+</ul>
+
+</body>
+</html>
