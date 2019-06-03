@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<?php
+	include 'login_db.php';
+
+	if (isset($_POST['submit'])) {
+		$name = $_POST['user'];
+		$pwd = $_POST['pass'];
+		$sql = ("SELECT * FROM login WHERE name='$name' AND pwd='$pwd' ");
+		$results = $conn->query($sql);
+		
+	if (!$row = $results->fetch_assoc()){
+		echo "you are not logged in";
+	}
+	else {
+		//$_SESSION['name'] = $row['name'];
+		header("Location: hr.htm");
+	}	
+	}
+
+	?>
 	<title>LogIn</title>
 	<style type="text/css">
 		body {
@@ -24,7 +43,7 @@
 </head>
 <body>
 	<div id="frm">
-		<form action="process.php" method="POST">
+		<form action="login.php" method="POST">
 			<p>
 				<label>Username :</label>
 				<input type="text" id="user" name="user">
@@ -34,7 +53,7 @@
 				<input type="password" id="pass" name="pass">
 			</p>
 			<p>
-				<input type="submit" id="btn" value="Login">
+				<input type="submit" id="btn" name="submit" value="Login">
 			</p>
 		</form>
 	</div>
