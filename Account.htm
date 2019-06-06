@@ -5,7 +5,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <style>	
 	body {
-		background-image: url("3d9.jpg");
+		/*background-image: url("3d9.jpg");*/
+		background-color: lightgrey;
 		border-image-repeat: none;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -64,20 +65,12 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*table#t01 th {
-			background-color: blue;
-			color:white;
-			padding: 5px;
-			}*/
+
 table, th ,td {
 			border: 1px solid black;
 			border-collapse: collapse;
 		}
-/*table#t01 tr {
-	background-color: lightgray;
-	color: black;
-	padding: 10px;*/
-}
+
 table#table th {
 	background-color: black;
 	color: white;
@@ -120,9 +113,9 @@ tr:hover{background-color: black; cursor: pointer;}
    		<a href="#" class="dropbtn">Accounting</a>
     	<div class="dropdown-content">
     		<a href="journal.htm" target="_parent">Journal</a>
-      		<a href="ledger.htm" target="_parent">Ledger</a>
+      		<a href="ledger1.php" target="_parent">Ledger</a>
     	    <a href="Balance.htm" target="_parent">Trial Balance</a>
-    	    <a href="income.htm" target="_parent">Income Statement</a>
+    	    <a href="income.php" target="_parent">Income Statement</a>
     	</div>
     	<li><a href="bsheet.htm">Balance Sheet</a></li>
  	   	<li><a href="finacial.htm">Finacial Statement</a></li>
@@ -132,59 +125,8 @@ tr:hover{background-color: black; cursor: pointer;}
     </ul><br>
     <button type="button" onclick="document.getElementById('date').innerHTML = Date()" style="float: right;">Todays Date & Time</button>
     <h1 id="date" style="float: right;"></h1>
-    <h2 style="font-size: 40px; color: white;"><b>Chart of Account</b></h2>
-
-	<!--<table id="t01" style="width: 100%;">
-		<tr>
-			<th>Number</th>
-			<th>Account Description</th>
-			<th>Account Type</th>
-			<th>Statement</th>
-		</tr>
-		<tr>
-			<td>1000</td>
-			<td>Cash</td>
-			<td>Assets</td>
-			<td>Balance Sheet</td>
-		</tr>
-		<tr>
-			<td>0001</td>
-			<td>Accounts Receivable</td>
-			<td>Assets</td>
-			<td>Balance Sheet</td>
-		</tr>
-		<tr>
-			<td>2056</td>
-			<td>Insurance</td>
-			<td>Asset</td>
-			<td>Balance Sheet</td>
-		</tr>
-		<tr>
-			<td>9654</td>
-			<td>Account Payable</td>
-			<td>Liabilities</td>
-			<td>Balance Sheet</td>
-		</tr>
-		<tr>
-			<td>3696</td>
-			<td>Equity</td>
-			<td>Equity</td>
-			<td>Balance Sheet</td>
-		</tr>
-		<tr>
-			<td>0982</td>
-			<td>Fees Earned</td>
-			<td>Revenues</td>
-			<td>Income Statement</td>
-		</tr>
-		<tr>
-			<td>0870</td>
-			<td>Wages</td>
-			<td>Expenses</td>
-			<td>Income Statement</td>
-		</tr>
-	</table><br>-->
-
+		<h2 style="font-size: 40px; color: white;"><b>Chart of Account</b></h2>
+		
 	<div class="container">
 		<div class="tab tab-1">
 			<table id="table" border="1">
